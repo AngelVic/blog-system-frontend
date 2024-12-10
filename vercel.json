@@ -1,8 +1,9 @@
 {
   "version": 2,
   "framework": "vite",
-  "buildCommand": "npm install --legacy-peer-deps && npm run build",
+  "buildCommand": "npx pnpm install --no-frozen-lockfile && npx pnpm run build",
   "outputDirectory": "dist",
+  "installCommand": "npm install -g pnpm",
   "routes": [
     {
       "src": "/assets/(.*)",
